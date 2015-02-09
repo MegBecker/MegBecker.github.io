@@ -1,7 +1,7 @@
 /*!
  * Bootstrap's Gruntfile
  * http://getbootstrap.com
- * Copyright 2013-2015 Twitter, Inc.
+ * Copyright 2013-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
@@ -18,7 +18,6 @@ module.exports = function (grunt) {
   var fs = require('fs');
   var path = require('path');
   var npmShrinkwrap = require('npm-shrinkwrap');
-  var generateGlyphiconsData = require('./grunt/bs-glyphicons-data-generator.js');
   var BsLessdocParser = require('./grunt/bs-lessdoc-parser.js');
   var getLessVarsData = function () {
     var filePath = path.join(__dirname, 'less/variables.less');
@@ -51,8 +50,7 @@ module.exports = function (grunt) {
 
     // Task configuration.
     clean: {
-      dist: 'dist',
-      docs: 'docs/dist'
+      dist: 'dist'
     },
 
     jshint: {
@@ -75,7 +73,7 @@ module.exports = function (grunt) {
         src: 'js/tests/unit/*.js'
       },
       assets: {
-        src: ['docs/assets/js/src/*.js', 'docs/assets/js/*.js', '!docs/assets/js/*.min.js']
+        src: []
       }
     },
 
@@ -131,14 +129,6 @@ module.exports = function (grunt) {
       core: {
         src: '<%= concat.bootstrap.dest %>',
         dest: 'dist/js/<%= pkg.name %>.min.js'
-      },
-      customize: {
-        src: configBridge.paths.customizerJs,
-        dest: 'docs/assets/js/customize.min.js'
-      },
-      docsJs: {
-        src: configBridge.paths.docsJs,
-        dest: 'docs/assets/js/docs.min.js'
       }
     },
 
@@ -189,15 +179,6 @@ module.exports = function (grunt) {
           map: true
         },
         src: 'dist/css/<%= pkg.name %>-theme.css'
-      },
-      docs: {
-        src: ['docs/assets/css/anchor.css', 'docs/assets/css/src/docs.css']
-      },
-      examples: {
-        expand: true,
-        cwd: 'docs/examples/',
-        src: ['**/*.css'],
-        dest: 'docs/examples/'
       }
     },
 
@@ -208,24 +189,14 @@ module.exports = function (grunt) {
       dist: [
         'dist/css/bootstrap.css',
         'dist/css/bootstrap-theme.css'
-      ],
-      examples: [
-        'docs/examples/**/*.css'
-      ],
-      docs: {
-        options: {
-          ids: false,
-          'overqualified-elements': false
-        },
-        src: 'docs/assets/css/src/docs.css'
-      }
+      ]
     },
 
     cssmin: {
       options: {
         compatibility: 'ie8',
         keepSpecialComments: '*',
-        advanced: false
+        noAdvanced: true
       },
       minifyCore: {
         src: 'dist/css/<%= pkg.name %>.css',
@@ -234,15 +205,6 @@ module.exports = function (grunt) {
       minifyTheme: {
         src: 'dist/css/<%= pkg.name %>-theme.css',
         dest: 'dist/css/<%= pkg.name %>-theme.min.css'
-      },
-      docs: {
-        src: [
-          'docs/assets/css/src/pygments-manni.css',
-          'docs/assets/css/src/anchor.css',
-          'docs/assets/css/src/docs.css'
-
-        ],
-        dest: 'docs/assets/css/docs.min.css'
       }
     },
 
@@ -265,16 +227,6 @@ module.exports = function (grunt) {
         cwd: 'dist/css/',
         src: ['*.css', '!*.min.css'],
         dest: 'dist/css/'
-      },
-      examples: {
-        expand: true,
-        cwd: 'docs/examples/',
-        src: '**/*.css',
-        dest: 'docs/examples/'
-      },
-      docs: {
-        src: 'docs/assets/css/src/docs.css',
-        dest: 'docs/assets/css/src/docs.css'
       }
     },
 
@@ -282,10 +234,6 @@ module.exports = function (grunt) {
       fonts: {
         src: 'fonts/*',
         dest: 'dist/'
-      },
-      docs: {
-        src: 'dist/*/*',
-        dest: 'docs/'
       }
     },
 
@@ -298,43 +246,28 @@ module.exports = function (grunt) {
       }
     },
 
-    jekyll: {
-      options: {
-        config: '_config.yml'
-      },
-      docs: {},
-      github: {
-        options: {
-          raw: 'github: true'
-        }
-      }
-    },
-
     jade: {
       options: {
         pretty: true,
         data: getLessVarsData
-      },
-      customizerVars: {
-        src: 'docs/_jade/customizer-variables.jade',
-        dest: 'docs/_includes/customizer-variables.html'
-      },
-      customizerNav: {
-        src: 'docs/_jade/customizer-nav.jade',
-        dest: 'docs/_includes/nav/customize.html'
       }
     },
 
-    htmllint: {
+    validation: {
       options: {
-        ignore: [
-          'Attribute "autocomplete" not allowed on element "button" at this point.',
-          'Attribute "autocomplete" not allowed on element "input" at this point.',
-          'Bad value "X-UA-Compatible" for attribute "http-equiv" on element "meta".',
-          'Element "img" is missing required attribute "src".'
+        charset: 'utf-8',
+        doctype: 'HTML5',
+        failHard: true,
+        reset: true,
+        relaxerror: [
+          'Element img is missing required attribute src.',
+          'Attribute autocomplete not allowed on element input at this point.',
+          'Attribute autocomplete not allowed on element button at this point.'
         ]
       },
-      src: '_gh_pages/**/*.html'
+      files: {
+        src: '_gh_pages/**/*.html'
+      }
     },
 
     watch: {
@@ -367,9 +300,8 @@ module.exports = function (grunt) {
       all: {
         options: {
           build: process.env.TRAVIS_JOB_ID,
-          throttled: 10,
+          concurrency: 10,
           maxRetries: 3,
-          maxPollRetries: 4,
           urls: ['http://127.0.0.1:3000/js/tests/index.html'],
           browsers: grunt.file.readYAML('grunt/sauce_browsers.yml')
         }
@@ -380,27 +312,7 @@ module.exports = function (grunt) {
       npmUpdate: {
         command: 'npm update'
       }
-    },
-
-    compress: {
-      main: {
-        options: {
-          archive: 'bootstrap-<%= pkg.version %>-dist.zip',
-          mode: 'zip',
-          level: 9,
-          pretty: true
-        },
-        files: [
-          {
-            expand: true,
-            cwd: 'dist/',
-            src: ['**'],
-            dest: 'bootstrap-<%= pkg.version %>-dist'
-          }
-        ]
-      }
     }
-
   });
 
 
@@ -408,39 +320,17 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
   require('time-grunt')(grunt);
 
-  // Docs HTML validation task
-  grunt.registerTask('validate-html', ['jekyll:docs', 'htmllint']);
-
   var runSubset = function (subset) {
     return !process.env.TWBS_TEST || process.env.TWBS_TEST === subset;
-  };
-  var isUndefOrNonZero = function (val) {
-    return val === undefined || val !== '0';
   };
 
   // Test task.
   var testSubtasks = [];
   // Skip core tests if running a different subset of the test suite
-  if (runSubset('core') &&
-      // Skip core tests if this is a Savage build
-      process.env.TRAVIS_REPO_SLUG !== 'twbs-savage/bootstrap') {
-    testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'csslint:dist', 'test-js', 'docs']);
+  if (runSubset('core')) {
+    testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'csslint:dist', 'test-js']);
   }
-  // Skip HTML validation if running a different subset of the test suite
-  if (runSubset('validate-html') &&
-      // Skip HTML5 validator on Travis when [skip validator] is in the commit message
-      isUndefOrNonZero(process.env.TWBS_DO_VALIDATOR)) {
-    testSubtasks.push('validate-html');
-  }
-  // Only run Sauce Labs tests if there's a Sauce access key
-  if (typeof process.env.SAUCE_ACCESS_KEY !== 'undefined' &&
-      // Skip Sauce if running a different subset of the test suite
-      runSubset('sauce-js-unit') &&
-      // Skip Sauce on Travis when [skip sauce] is in the commit message
-      isUndefOrNonZero(process.env.TWBS_DO_SAUCE)) {
-    testSubtasks.push('connect');
-    testSubtasks.push('saucelabs-qunit');
-  }
+
   grunt.registerTask('test', testSubtasks);
   grunt.registerTask('test-js', ['jshint:core', 'jshint:test', 'jshint:grunt', 'jscs:core', 'jscs:test', 'jscs:grunt', 'qunit']);
 
@@ -462,8 +352,6 @@ module.exports = function (grunt) {
   // This can be overzealous, so its changes should always be manually reviewed!
   grunt.registerTask('change-version-number', 'sed');
 
-  grunt.registerTask('build-glyphicons-data', function () { generateGlyphiconsData.call(this, grunt); });
-
   // task for building customizer
   grunt.registerTask('build-customizer', ['build-customizer-html', 'build-raw-files']);
   grunt.registerTask('build-customizer-html', 'jade');
@@ -477,15 +365,6 @@ module.exports = function (grunt) {
     var destFilepath = 'dist/js/npm.js';
     generateCommonJSModule(grunt, srcFiles, destFilepath);
   });
-
-  // Docs task.
-  grunt.registerTask('docs-css', ['autoprefixer:docs', 'autoprefixer:examples', 'csscomb:docs', 'csscomb:examples', 'cssmin:docs']);
-  grunt.registerTask('lint-docs-css', ['csslint:docs', 'csslint:examples']);
-  grunt.registerTask('docs-js', ['uglify:docsJs', 'uglify:customize']);
-  grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
-  grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'build-glyphicons-data', 'build-customizer']);
-
-  grunt.registerTask('prep-release', ['jekyll:github', 'compress']);
 
   // Task for updating the cached npm packages used by the Travis build (which are controlled by test-infra/npm-shrinkwrap.json).
   // This task should be run and the updated file should be committed whenever Bootstrap's dependencies change.
