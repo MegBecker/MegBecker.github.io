@@ -6593,8 +6593,9 @@ padding-top: 50px;
 }
 
 .nav li a {
-  /*color: black;*/
+  color: #0b3a4d; 
 }
+
 .nav-bg {
   background: white;
 	border-color: white;
@@ -6604,6 +6605,7 @@ padding-top: 50px;
 }
 .navbar-brand {
   padding: 10px 10px;
+	color: #0b3a4d;
 }
 
 .homepagerows {
@@ -6621,11 +6623,11 @@ padding-left: 50px;
  }
 
 a:hover {
-  border-bottom:2px solid #ad1f2d !important;
+  border-bottom:2px solid #00a79d !important;
 }
 
 a:active {
-    border-bottom:2px solid #ad1f2d !important;
+    border-bottom:2px solid #ef4036 !important;
 }
 
 #imgtest {
