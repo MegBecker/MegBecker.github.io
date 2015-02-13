@@ -6686,3 +6686,17 @@ a:active {
 #imgright2:hover {
  background-image: url("/Images/icons-05.png");
 }
+
+#imgright3:hover {
+ background-image: url("/Images/icons-09.png");
+}
+
+#imgright3 {
+ display: block; /* 'convert' <a> to <div> */
+ margin-bottom: 10px;
+ background-position: top right;
+ background-repeat: no-repeat;
+ width: 400px;
+ height: 200px;
+ background-image: url("/Images/icons-08.png");
+}
