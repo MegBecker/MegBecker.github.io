@@ -6577,18 +6577,19 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-
 .h1,
 .h2,
 .h3,
 .h4,
 .h5,
 .h6 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "lato", Helvetica, Arial, sans-serif;
 }
 
-body {
+.text {
 padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .nav li a {
@@ -6603,15 +6604,17 @@ padding-top: 50px;
 .navbar-brand {
   padding: 10px 10px;
 }
-a {
-  color: black;
-  text-decoration: none;
+
+.homepagerows {
+height: 150px;
+	padding-top: 20px;
 }
-a:hover {
-  color: #808284;
-  text-decoration: none;
+
+.portfoliorows {
+height: 275px;
+padding-left: 50px;
+	padding-top: 20px;
 }
-a:active {
-  color: #464646;
-  text-decoration: none;
-}
+ .largeimage {
+ margin: auto;
+ }
