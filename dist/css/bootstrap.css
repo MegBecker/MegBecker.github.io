@@ -6597,17 +6597,18 @@ padding-top: 50px;
 }
 .nav-bg {
   background: white;
+	border-color: white;
 }
 .navbar-header {
-  min-height: 30px;
+  min-height: 20px;
 }
 .navbar-brand {
   padding: 10px 10px;
 }
 
 .homepagerows {
-height: 150px;
-	padding-top: 20px;
+height: 200px;
+padding-top: 20px;
 }
 
 .portfoliorows {
@@ -6618,3 +6619,24 @@ padding-left: 50px;
  .largeimage {
  margin: auto;
  }
+
+a:hover {
+  border-bottom:2px solid #ad1f2d !important;
+}
+
+a:active {
+    border-bottom:2px solid #ad1f2d !important;
+}
+
+#imgtest {
+ display: block; /* 'convert' <a> to <div> */
+ margin-bottom: 10px;
+ background-position: top left;
+ background-repeat: no-repeat;
+ width: 330px;
+ height: 200px;
+ background-image: url("/Images/icons-01.png");
+}
+#imgtest:hover {
+ background-image: url("/Images/icons-02.png");
+}
