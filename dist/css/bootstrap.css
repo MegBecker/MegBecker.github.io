@@ -6631,15 +6631,58 @@ a:active {
     border-bottom:2px solid #ef4036 !important;
 }
 
-#imgtest {
+#imgleft1 {
  display: block; /* 'convert' <a> to <div> */
  margin-bottom: 10px;
  background-position: top left;
  background-repeat: no-repeat;
- width: 330px;
+ width: 400px;
  height: 200px;
  background-image: url("/Images/icons-01.png");
 }
-#imgtest:hover {
+
+#imgright1 {
+ display: block; /* 'convert' <a> to <div> */
+ margin-bottom: 10px;
+ background-position: top right;
+ background-repeat: no-repeat;
+ width: 400px;
+ height: 200px;
+ background-image: url("/Images/icons-13.png");
+}
+
+#imgleft1:hover {
  background-image: url("/Images/icons-02.png");
+}
+
+#imgright1:hover {
+ background-image: url("/Images/icons-12.png");
+}
+
+#imgleft2 {
+ display: block; /* 'convert' <a> to <div> */
+ margin-bottom: 10px;
+ background-position: top left;
+ background-repeat: no-repeat;
+ width: 400px;
+ height: 200px;
+ background-image: url("/Images/icons-06.png");
+}
+
+#imgright2 {
+ display: block; /* 'convert' <a> to <div> */
+ margin-bottom: 10px;
+ background-position: top right;
+ background-repeat: no-repeat;
+ width: 330px;
+ height: 200px;
+ background-image: url("/Images/icons-04.png");
+}
+
+#imgleft2:hover {
+ background-image: url("/Images/icons-07.png");
+}
+
+#imgright2:hover {
+ background-image: url("/Images/icons-05.png");
 }
