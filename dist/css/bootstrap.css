@@ -6702,11 +6702,13 @@ a:active {
 }
 
 .box { 
+	width: 275px;
+	height: 275px;
 }
 
-.overlay {  
-    background:rgba(0, 0, 0, .75);
-    opacity:0;    
+.overlay1 {  
+    background:rgba(0, 167, 157, .75);
+    opacity: 0;    
     width:100%;height:100%; 
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -6714,17 +6716,49 @@ a:active {
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
+.overlay2 {  
+    background:rgba(239, 64, 54, .75);
+    opacity: 0;    
+    width:100%;height:100%; 
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay3 {  
+    background:rgba(11, 58, 77, .75);
+    opacity: 0;    
+    width:100%;height:100%; 
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
 .box:hover {
     //border:1px solid #555;
     //border-radius:5px;
 }
 
-.box:hover .overlay {
+.box:hover .overlay1{
+    opacity:1;
+}
+
+.box:hover .overlay2{
+    opacity:1;
+}
+
+.box:hover .overlay3{
     opacity:1;
 }
 
 .caption {
-    position:relative;
+    top: 90px;
+	position:relative;
 	color: white;
 	text-align: center;
 }
