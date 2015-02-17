@@ -6603,8 +6603,9 @@ padding-top: 50px;
 }
 
 .nav-bg {
-  background: white;
+  background: rgba(255, 255, 255, .95);
 	border-color: white;
+	color: #0b3a4d;
 }
 .navbar-header {
   min-height: 20px;
@@ -6796,11 +6797,15 @@ margin-left: auto;
 .footer {
   text-align: center;
 	width: 100%;
-  padding-top: 200px;
+  margin-top: 100px;
 }
 
 .footertext {
   color: #BDBDBD;
   line-height: 1em;
   padding-bottom: 20px;
+}
+
+.hmpgbackground {
+background-color: rgba(0, 167, 157, .15)
 }
