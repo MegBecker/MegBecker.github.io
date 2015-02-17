@@ -6614,9 +6614,13 @@ padding-top: 50px;
 	color: #0b3a4d;
 }
 
+navbar-brand a {
+text-decoration: none;
+}
+
 .homepagerows {
 height: 200px;
-padding-top: 20px;
+padding-top: 75px;
 }
 
 .portfoliorows {
@@ -6759,10 +6763,11 @@ a:active {
 }
 
 .caption {
-    top: 90px;
+    top: 110px;
 	position:relative;
 	color: white;
 	text-align: center;
+	line-height: 1em;
 }
 
 .workimage {
@@ -6780,6 +6785,7 @@ text-decoration: none;
 margin-bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 75px;
  }
 
 .container {
