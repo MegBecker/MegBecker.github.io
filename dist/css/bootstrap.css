@@ -6763,6 +6763,8 @@ a:active {
 .workimage {
 width: 275px;
 height: 275px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .largeimage {
@@ -6770,3 +6772,20 @@ margin-bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
  }
+
+.container {
+margin-left: auto;
+	margin-right: auto;
+}
+
+.footer {
+  text-align: center;
+	width: 100%;
+  padding-top: 200px;
+}
+
+.footertext {
+  color: #BDBDBD;
+  line-height: 1em;
+  padding-bottom: 20px;
+}
