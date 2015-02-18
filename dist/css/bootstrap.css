@@ -1086,7 +1086,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "lato", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -1267,14 +1267,17 @@ h6 .small,
 h1,
 .h1 {
   font-size: 36px;
+	font-weight: 900;
 }
 h2,
 .h2 {
   font-size: 30px;
+	font-weight: 300;
 }
 h3,
 .h3 {
   font-size: 24px;
+	font-weight: 900;
 }
 h4,
 .h4 {
@@ -6578,18 +6581,22 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
+
+
+.h1 {
+font-family: "lato", sans-serif;
+font-weight: 900;
+}
 .h2,
 .h3,
 .h4,
 .h5,
-.h6 {
-  font-family: "lato", sans-serif;
+.h6 
+.p
+.body {
+  font-family: 'Lato', sans-serif;
 }
 
-.h1 {
-font-weight: 00;
-font-family: "lato", sans-serif;
-}
 
 .text {
 padding-top: 50px;
@@ -6797,6 +6804,7 @@ margin-left: auto;
 .footer {
   text-align: center;
 	width: 100%;
+	margin-top: 50px;
 }
 
 .footertext {
@@ -6819,4 +6827,27 @@ background-color: rgba(0, 167, 157, .15);
 	z-index: -1;
 }
 
+.textupper {
+text-transform: uppercase;
+	letter-spacing: 0.3em
+}
 
+.textuppernav {
+text-transform: uppercase;
+	letter-spacing: 0.2em
+}
+
+.textuppersmall {
+text-transform: uppercase;
+	letter-spacing: 0.1em
+}
+
+.imagecaption {
+margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.iconcenter {
+margin: 0 auto;
+	text-align: center;
+}
