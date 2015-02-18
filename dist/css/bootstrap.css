@@ -6797,7 +6797,6 @@ margin-left: auto;
 .footer {
   text-align: center;
 	width: 100%;
-  margin-top: 100px;
 }
 
 .footertext {
@@ -6807,5 +6806,16 @@ margin-left: auto;
 }
 
 .hmpgbackground {
-background-color: rgba(0, 167, 157, .15)
+background-color: rgba(0, 167, 157, .15);
 }
+
+
+.homepageimage {
+  background-image: url("/images/Chiasmusfull.jpg");
+  background-repeat: no-repeat;
+	  background-size: cover;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
