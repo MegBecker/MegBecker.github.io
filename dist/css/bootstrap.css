@@ -6804,7 +6804,10 @@ margin-left: auto;
 .footer {
   text-align: center;
 	width: 100%;
+	padding-top: 25px;
 	margin-top: 50px;
+	background-color: white;
+	padding-bottom: 25px;
 }
 
 .footertext {
@@ -6819,7 +6822,7 @@ background-color: rgba(0, 167, 157, .15);
 
 
 .homepageimage {
-  background-image: url("/images/Chiasmusfull.jpg");
+  background-image: url("/images/background.jpg");
   background-repeat: no-repeat center center;
 	background-size: cover;
 	min-height: 100%;
