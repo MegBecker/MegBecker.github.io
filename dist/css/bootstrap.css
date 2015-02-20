@@ -6659,7 +6659,7 @@ a:active {
  margin-bottom: 10px;
  background-position: top right;
  background-repeat: no-repeat;
- width: 400px;
+ width: 500px;
  height: 200px;
  background-image: url("/Images/icons-13.png");
 }
@@ -6677,7 +6677,7 @@ a:active {
  margin-bottom: 10px;
  background-position: top left;
  background-repeat: no-repeat;
- width: 400px;
+ width: 500px;
  height: 200px;
  background-image: url("/Images/icons-06.png");
 }
@@ -6687,8 +6687,8 @@ a:active {
  margin-bottom: 10px;
  background-position: top right;
  background-repeat: no-repeat;
- width: 330px;
- height: 200px;
+ width: 500px;
+ height: 400px;
  background-image: url("/Images/icons-04.png");
 }
 
@@ -6710,7 +6710,7 @@ a:active {
  background-position: top right;
  background-repeat: no-repeat;
  width: 400px;
- height: 200px;
+ height: 400px;
  background-image: url("/Images/icons-08.png");
 }
 
