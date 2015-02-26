@@ -3900,7 +3900,6 @@ border-bottom:2px solid #00a79d !important;
     border-bottom:2px solid #ef4036 !important;
 }
 
-
 .nav > li.disabled > a {
   color: #777;
 }
@@ -6736,6 +6735,35 @@ padding-left: 50px;
  background-image: url("/Images/icons-08.png");
 }
 
+#icon1:hover {
+ background-image: url("/Images/icons-18.png");
+}
+
+#icon1 {
+ display: block; /* 'convert' <a> to <div> */
+ margin-bottom: 10px;
+	background-position: center;
+width: 140px;
+	height: 140px;
+ background-repeat: no-repeat;
+ background-image: url("/Images/icons-14.png");
+}
+
+#me:hover {
+ background-image: url("/Images/icons-11.png");
+}
+
+#me {
+ display: block; /* 'convert' <a> to <div> */
+ margin-bottom: 10px;
+	background-position: center;
+width: 275px;
+	height: 275px;
+ background-repeat: no-repeat;
+ background-image: url("/Images/me.jpg");
+}
+
+
 .box { 
 	width: 275px;
 	height: 275px;
@@ -6887,6 +6915,7 @@ margin: 0 auto;
 	text-decoration: none;
 }
 
+
 .sidemenu {
  position: fixed;
   left: 20px;
@@ -6901,4 +6930,6 @@ text-align: right;
 margin-top: 1em;
 	margin-bottom: 3em;
 }
+
+
 
