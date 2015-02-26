@@ -4010,6 +4010,21 @@ border-bottom:2px solid #00a79d !important;
   background-color: #337ab7;
 }
 
+.nav a:link{
+text-decoration: none !important;
+	color: #0b3a4d;
+}
+
+.nav a:hover{
+text-decoration: none !important;
+	color: #00a79d;
+}
+
+.nav a:active{
+text-decoration: none !important;
+	color: #ef4036;
+}
+
 .nav-stacked a:link{
 text-decoration: none !important;
 	color: #0b3a4d;
@@ -6871,7 +6886,7 @@ background-color: rgba(0, 167, 157, .15);
 
 
 .homepageimage {
-  background-image: url("/images/background.jpg");
+  background-image: url("/images/background3.jpg");
   background-repeat: no-repeat center center;
 	background-size: cover;
 	min-height: 100%;
@@ -6931,5 +6946,47 @@ margin-top: 1em;
 	margin-bottom: 3em;
 }
 
+@media (min-width:768px) {
+.container {
+width:100%;
+}
+#main-content{
+     min-height: 100%;
+    height: auto; 
 
+}
+#main-content > .row {
+ overflow-x:scroll;
+     overflow-y:hidden;
+    white-space:nowrap;
+}    
+#main-content > .row [class*="col-lg"], #main-content > .row [class*="col-md"], #main-content > .row [class*="col-sm"] {
+    float:none;
+    display:inline-block;
+    white-space:normal;
+    vertical-align:top;
+}
+}
 
+.testimage {
+z-index: -1;
+	margin-right: 40px;
+	margin-top: 150px;
+}
+
+.testimage2 {
+z-index: -2;
+	margin-right: 300px;
+ float: right;
+}
+.testimage3 {
+z-index: -3;
+	margin-right: 600px;
+	margin-top: 400px;
+}
+
+.welcometext {
+margin-top: 200px;
+	margin-left: 100px;
+	color: #0b3a4d;
+}
