@@ -3873,7 +3873,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+	text-decoration: none;
 }
+
+
 .nav > li {
   position: relative;
   display: block;
@@ -3885,9 +3888,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  text-decoration: none;
+	text-decoration: none;
   background-color: #eee;
 }
+
+.nav > li > a:hover {
+border-bottom:2px solid #00a79d !important;
+}
+
+.nav > li > a:active {
+    border-bottom:2px solid #ef4036 !important;
+}
+
+
 .nav > li.disabled > a {
   color: #777;
 }
@@ -3997,8 +4010,25 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #fff;
   background-color: #337ab7;
 }
+
+.nav-stacked a:link{
+text-decoration: none !important;
+	color: #0b3a4d;
+}
+
+.nav-stacked a:hover{
+text-decoration: none !important;
+	color: #00a79d;
+}
+
+.nav-stacked a:active{
+text-decoration: none !important;
+	color: #ef4036;
+}
+
+
 .nav-stacked > li {
-  float: none;
+  float: right;
 }
 .nav-stacked > li + li {
   margin-top: 2px;
@@ -6636,14 +6666,6 @@ height: 275px;
 padding-left: 50px;
 }
 
-a:hover {
-  border-bottom:2px solid #00a79d !important;
-}
-
-a:active {
-    border-bottom:2px solid #ef4036 !important;
-}
-
 #imgleft1 {
  display: block; /* 'convert' <a> to <div> */
  margin-bottom: 10px;
@@ -6872,7 +6894,7 @@ margin: 0 auto;
 text-align: right;
 	line-height: 2em;
 	float: right;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 .artdesc {
