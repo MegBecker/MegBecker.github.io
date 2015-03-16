@@ -1282,6 +1282,8 @@ h3,
 h4,
 .h4 {
   font-size: 18px;
+	font-weight: 300;
+	line-height: 1.5em;
 }
 h5,
 .h5 {
@@ -6886,7 +6888,7 @@ background-color: rgba(0, 167, 157, .15);
 
 
 .homepageimage {
-  background-image: url("/images/background3.jpg");
+  background-image: url("Images/background3.jpg");
   background-repeat: no-repeat center center;
 	background-size: cover;
 	min-height: 100%;
@@ -7009,3 +7011,4 @@ color: #0b3a4d;
  height: 275px;
  background-image: url("/Images/dejavu5.jpg");
 }
+
