@@ -6844,6 +6844,14 @@ width: 275px;
 	line-height: 1em;
 }
 
+.caption2 {
+    top: 80px;
+	position:relative;
+	color: white;
+	text-align: center;
+	line-height: 1em;
+}
+
 .workimage {
 width: 275px;
 height: 275px;
