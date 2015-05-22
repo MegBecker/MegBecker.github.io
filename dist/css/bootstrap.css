@@ -6947,7 +6947,7 @@ margin: 0 auto;
   left: 20px;
   margin-top: 75px;
 text-align: right;
-	line-height: 2em;
+	line-height: 2.25em;
 	float: right;
 	text-decoration: none !important;
 }
@@ -7031,4 +7031,8 @@ padding-top: 26px;
 
 .advsize {
 width: 80%;
+}
+
+.sidemenutwolines {
+line-height: 1.25em;
 }
