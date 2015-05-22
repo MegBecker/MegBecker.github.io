@@ -94,7 +94,7 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  height: 0;
+  height: 1px;
   -webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
@@ -7037,7 +7037,12 @@ width: 80%;
 line-height: 1.25em;
 }
 
-.line {
-width: 1px solid;
-}
 
+.divider {
+  height: 1px;
+  width:100%;
+  display:block; /* for use on default inline elements like span */
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
