@@ -7110,3 +7110,20 @@ margin-top: 50px;
 .aboutbtn {
 margin-top: 30px;
 }
+
+.plink a:link {
+text-decoration: none;
+     color:black;
+}
+
+.plink a:hover {
+color: #EF4036;
+}
+
+.plink a:active {
+color: #EF4036;
+}
+
+.plink a:visited {
+color: black;
+}
