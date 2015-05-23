@@ -6954,7 +6954,7 @@ text-align: right;
 
 .artdesc {
 margin-top: 1em;
-	margin-bottom: 3em;
+	margin-bottom: 50px;
 }
 
 @media (min-width:768px) {
@@ -7045,4 +7045,9 @@ line-height: 1.25em;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
+}
+
+.essartdesc {
+    margin-top: 1em;
+	margin-bottom: 50px;
 }
