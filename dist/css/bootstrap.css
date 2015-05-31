@@ -7060,7 +7060,7 @@ margin-top: 30px;
 }
 
 .faicon a:visited {
-color: black;
+color: #0B3A4D;
 }
 
 .faicon a:link {
@@ -7085,7 +7085,7 @@ word-spacing: 1em;
 }
 
 .btn{
-   border: 3px solid #EF4036;
+   border: 3px solid rgba(0, 167, 157, .75);
     padding-bottom:15px;
     -o-transition: background-color .2s ease-in; 
     -moz-transition: background-color .2s ease-in;
@@ -7097,13 +7097,13 @@ word-spacing: 1em;
 
 .btn:hover {
     text-decoration: none;
-    background-color: #EF4036; 
+    background-color: rgba(0, 167, 157, .75);
      color: #0B3A4D;
 }
 
 .btn:active {
     text-decoration: none;
-   color: #0B3A4D; 
+   color: rgba(0, 167, 157, .75);
 }
 
 .btn:visited {
