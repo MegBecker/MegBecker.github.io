@@ -1287,7 +1287,9 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 18px;
+	font-weight: 900;
+	line-height: 1.5em;
 }
 h6,
 .h6 {
@@ -7052,7 +7054,35 @@ line-height: 1.25em;
 	margin-bottom: 50px;
 }
 
+.faicon {
+margin-top: 30px;
+    
+}
 
+.faicon a:visited {
+color: black;
+}
+
+.faicon a:link {
+text-decoration: none;
+     color: #0B3A4D;
+}
+
+.faicon a:hover {
+color: rgba(0, 167, 157, .75);
+}
+
+.faicon a:active {
+color: #EF4036;
+}
+
+.faicon a:visited {
+color: #0B3A4D;
+}
+
+.footertext {
+word-spacing: 1em;
+}
 
 .btn{
    border: 3px solid #EF4036;
@@ -7109,6 +7139,7 @@ margin-top: 50px;
 
 .aboutbtn {
 margin-top: 30px;
+    padding-bottom: 5px;
 }
 
 .plink a:link {
