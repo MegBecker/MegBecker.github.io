@@ -1293,7 +1293,9 @@ h5,
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 16px;
+    font-weight: 300;
+	line-height: 1.5em;
 }
 p {
   margin: 0 0 10px;
@@ -6881,7 +6883,7 @@ margin-left: auto;
   text-align: center;
 	width: 100%;
 	padding-top: 25px;
-	margin-top: 50px;
+	margin-top: 25px;
 	background-color: white;
 	padding-bottom: 25px;
 }
@@ -7054,35 +7056,8 @@ line-height: 1.25em;
 	margin-bottom: 50px;
 }
 
-.faicon {
-margin-top: 30px;
-    
-}
 
-.faicon a:visited {
-color: #0B3A4D;
-}
 
-.faicon a:link {
-text-decoration: none;
-     color: #0B3A4D;
-}
-
-.faicon a:hover {
-color: rgba(0, 167, 157, .75);
-}
-
-.faicon a:active {
-color: #EF4036;
-}
-
-.faicon a:visited {
-color: #0B3A4D;
-}
-
-.footertext {
-word-spacing: 1em;
-}
 
 .btn{
    border: 3px solid rgba(0, 167, 157, .75);
@@ -7157,4 +7132,36 @@ color: #EF4036;
 
 .plink a:visited {
 color: black;
+}
+
+.footertext {
+word-spacing: 1em;
+    text-align: left;  
+}
+
+.faicon {
+margin-top: 30px;
+    color: darkgray;
+    
+}
+
+.faicon a:visited {
+color: darkgray;
+}
+
+.faicon a:link {
+text-decoration: none;
+     color: darkgray;
+}
+
+.faicon a:hover {
+color: rgba(0, 167, 157, .75);
+}
+
+.faicon a:active {
+color: #EF4036;
+}
+
+.faicon a:visited {
+color: darkgray;
 }
