@@ -6780,7 +6780,8 @@ width: 275px;
 .menuimage { 
 max-width: 600px;
     height: 300px;
-    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 div.menuimage a {
@@ -6793,7 +6794,8 @@ background-repeat: no-repeat center center;
      display: block;
   max-width: 100%;
   height: auto;
-    background-position: center;
+     margin-right: auto;
+    margin-left: auto;
 }
 
 .boxtest:hover {
