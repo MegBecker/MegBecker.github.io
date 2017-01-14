@@ -3546,7 +3546,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 2px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
@@ -4144,7 +4144,7 @@ text-decoration: none !important;
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -4185,7 +4185,7 @@ text-decoration: none !important;
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
