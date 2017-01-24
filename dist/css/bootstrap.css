@@ -4282,7 +4282,7 @@ text-decoration: none !important;
   padding-bottom: 10px;
   line-height: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
