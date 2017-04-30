@@ -6778,7 +6778,7 @@ width: 275px;
 
 
 .menuimage { 
-max-width: 600px;
+max-width: 100%;
     height: 300px;
     margin-right: auto;
     margin-left: auto;
@@ -6903,6 +6903,17 @@ background-repeat: no-repeat center center;
      font-weight: light;
     letter-spacing: .5em;
 }
+
+.caption3 {
+    top: 140px;
+	position:relative;
+	color: white;
+	text-align: center;
+	line-height: 1em;
+    font-weight: light; 
+    letter-spacing: .5em;
+}
+
 
 .captiontest {
     top: 150px;
