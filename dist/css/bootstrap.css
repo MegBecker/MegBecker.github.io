@@ -6944,9 +6944,10 @@ margin-bottom: 100px;
  }
 
 .largeimagemobile {
-	margin-left: -25px;
-	margin-right: -25px;
-	margin-top: 0px;
+	margin-left: -40px;
+	margin-right: -40px;
+	padding-top: 50px;
+  	padding-bottom: 50px;
  }
 
 .container {
@@ -7075,8 +7076,8 @@ text-align: center;
 
 .artdesc {
 margin-top: 1em;
-	margin-bottom: 50px;
 }
+
 
 .pgtitle {
     margin-top: 5em;
