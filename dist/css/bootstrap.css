@@ -6772,7 +6772,7 @@ width: 275px;
 
 
 .box { 
-	width: 600px;
+	width: 900px;
 	height: 300px;
 }
 
@@ -7290,7 +7290,7 @@ color: darkgray;
 }
 
 .pad {
-margin-bottom: 200px;
+margin-bottom: 200px;   
 }
 
 .arrownav {
@@ -7300,6 +7300,6 @@ margin-bottom: 200px;
 .pgtitlecenter {
     text-align: center;
     margin-top: 50px;
-    font-weght: black;
+    font-weight: black;
     text-decoration: none;
 }
