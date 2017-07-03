@@ -6772,7 +6772,7 @@ width: 275px;
 
 
 .box { 
-	width: 900px;
+	width: 600px;
 	height: 300px;
 }
 
@@ -7060,8 +7060,8 @@ text-align: right;
 
 .sidecaption {
  position: fixed;
+     margin-top: 85px;
   left: 20px;
-  margin-top: 75px;
 text-align: left;
 	float: right;
 	text-decoration: none !important;
@@ -7069,7 +7069,8 @@ text-align: left;
 
 .sidecaptionsm {
   left: 20px;
-  margin-top: 75px;
+  margin-top: 25px;
+   padding-bottom: 25px; 
 text-align: center;
 	text-decoration: none !important;
 }
