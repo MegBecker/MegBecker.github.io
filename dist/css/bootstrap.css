@@ -7070,8 +7070,8 @@ text-align: left;
 .sidecaptionsm {
   left: 20px;
   margin-top: 25px;
-   padding-bottom: 25px; 
-text-align: left;
+   padding-bottom: 50px; 
+text-align: center;
 	text-decoration: none !important;
 }
 
