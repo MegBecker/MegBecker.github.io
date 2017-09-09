@@ -6784,7 +6784,18 @@ max-width: 100%;
     margin-left: auto;
 }
 
+.menuimagetest { 
+max-width: 100%;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 div.menuimage a {
+text-decoration: none;
+}
+
+div.menuimagetest a {
 text-decoration: none;
 }
 
