@@ -6974,6 +6974,7 @@ margin-left: auto;
   height: 60px;
   background-color: white;
     z-index: 150;
+    padding-top: 1em; 
 }
 
 .footer2 {
@@ -7314,6 +7315,10 @@ color: darkgray;
 margin-bottom: 200px;   
 }
 
+.padtop {
+    margin-top: 6em; 
+}
+
 .arrownav {
     word-spacing: 1em;
 }
@@ -7323,4 +7328,13 @@ margin-bottom: 200px;
     margin-top: 50px;
     font-weight: black;
     text-decoration: none;
+}
+
+.namescoot {
+    margin-top: -.5em;
+    text-decoration-color: #e2e3e4; !important;   
+}
+
+.captionpad {
+    margin-left: 3em; 
 }
