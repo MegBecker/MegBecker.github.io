@@ -3902,7 +3902,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .nav > li > a:hover {
-border-bottom:2px solid #00a79d !important;
+border-bottom:2px solid #072589 !important;
 }
 
 .nav > li > a:active {
@@ -4026,7 +4026,7 @@ text-decoration: none !important;
 
 .nav a:hover{
 text-decoration: none !important;
-	color: #00a79d;
+	color: #072589;
 }
 
 .nav a:active{
@@ -4041,7 +4041,7 @@ text-decoration: none !important;
 
 .nav-stacked a:hover{
 text-decoration: none !important;
-	color: #00a79d;
+	color: #072589;
 }
 
 .nav-stacked a:active{
@@ -7075,7 +7075,7 @@ margin: 0 auto;
 }
 
 .boxed {
-  border: 4px solid rgba(0, 167, 157, 1);
+  border: 4px solid rgba(7, 37, 137, 1);
   padding: 20px 150px 20px 150px;
   margin-left: 75px;
   margin-right: 75px;
@@ -7230,7 +7230,7 @@ line-height: 1.25em;
 
 
 .btn{
-   border: 3px solid rgba(0, 167, 157, .75);
+   border: 3px solid rgba(7, 37, 137, .75);
     padding-bottom:5px;
     -o-transition: background-color .2s ease-in; 
     -moz-transition: background-color .2s ease-in;
@@ -7242,40 +7242,40 @@ line-height: 1.25em;
 
 .btn:hover {
     text-decoration: none;
-    background-color: rgba(0, 167, 157, .75);
-     color: #0B3A4D;
+    background-color: rgba(7, 37, 137, .75);
+     color: #072589;
 }
 
 .btn:active {
     text-decoration: none;
-   color: rgba(0, 167, 157, .75);
+   color: rgba(7, 37, 137, .75);
 }
 
 .btn:visited {
     text-decoration: none;
- color: #0B3A4D;
+ color: #072589;
 }
 
 .btn a:link {
     
 text-decoration: none;
-     color: #0B3A4D;
+     color: #072589;
 }
 
 .btn a:hover {
 text-decoration: none;
-    color: #0B3A4D;
+    color: #072589;
 }
 
 .btn a:active {
 
-   color: #0B3A4D;
+   color: #072589;
 }
 
 .btn a:visited {
     
 
-     color: #0B3A4D;
+     color: #072589;
 }
 
 .indexbtn {
@@ -7325,7 +7325,7 @@ text-decoration: none;
 }
 
 .faicon a:hover {
-color: rgba(0, 167, 157, .75);
+color: rgba(7, 37, 137, .75);
 }
 
 .faicon a:active {
