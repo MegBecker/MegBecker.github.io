@@ -1279,7 +1279,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 22px;
 	font-weight: 400;
 }
 h4,
@@ -6774,21 +6774,23 @@ width: 275px;
 .box { 
 	width: 600px;
 	height: 300px;
+  padding: 0 !important;
+   margin: 0 !important; 
 }
 
 
 .menuimage { 
 max-width: 100%;
     height: 300px;
-    margin-right: auto;
-    margin-left: auto;
+ padding: 0 !important;
+   margin: 0 !important; 
 }
 
 .menuimagetest { 
 max-width: 100%;
     height: 150px;
-    margin-right: auto;
-    margin-left: auto;
+ padding: 0 !important;
+   margin: 0 !important;
 }
 
 div.menuimage a {
@@ -6805,8 +6807,8 @@ background-repeat: no-repeat center center;
      display: block;
   max-width: 100%;
   height: auto;
-     margin-right: auto;
-    margin-left: auto;
+ padding: 0 !important;
+   margin: 0 !important;
 }
 
 .boxtest:hover {
@@ -7362,4 +7364,41 @@ margin-bottom: 200px;
 
 .captionpad {
     margin-left: 3em; 
+}
+
+.no-gutter.row,
+.no-gutter.container,
+.no-gutter.container-fluid{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.no-gutter>[class^="col-"]{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row-compact {
+  margin-left: 0;
+  margin-right: 0;
+  > [class^="col"] {
+    padding-left: 0;
+    padding-right: 0;
+      margin-left: 0;
+  margin-right: 0;
+  }
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.row-no-padding {
+  margin-left: 0;
+  margin-right: 0;
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
