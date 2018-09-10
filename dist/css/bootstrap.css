@@ -7013,6 +7013,16 @@ margin-left: auto;
   background-color: white;
 }
 
+ .footerstick {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: $height-footer;
+    background-color: #f5f5f5;
+      margin: 20px 0;
+}
+      
+
 .footertext {
   color: #BDBDBD;
   line-height: 1em;
