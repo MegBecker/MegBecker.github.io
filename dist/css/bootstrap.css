@@ -7305,11 +7305,11 @@ text-decoration: none;
 }
 
 .plink a:hover {
-color: #EF4036;
+color: rgba(11, 58, 77, .75);
 }
 
 .plink a:active {
-color: #EF4036;
+color: rgba(11, 58, 77, .75);
 }
 
 .plink a:visited {
@@ -7422,4 +7422,8 @@ margin-bottom: 200px;
   display: block;
   max-width: 75%;
   height: auto;
+}
+
+.websitelink {
+  text-decoration: none;
 }
