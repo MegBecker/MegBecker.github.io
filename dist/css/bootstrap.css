@@ -64,7 +64,7 @@ dfn {
 h1 {
   margin: .67em 0;
   font-size: 2em;
-     font-weght: bold;
+     font-weight: bold;
 }
 
 mark {
@@ -1269,18 +1269,22 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
-	font-weight: 700;
+  font-size: 28px;
+   font-weight: 100;
+    font-family: Lora;
 }
 h2,
 .h2 {
-  font-size: 32px;
-	font-weight: 300;
+  font-size: 24px;
+	font-weight: 500;
+    font-family: Roboto Mono;
 }
 h3,
 .h3 {
-  font-size: 22px;
-	font-weight: 400;
+  font-weight: 500;
+  font-size: 25px;
+	font-weight: 800;
+        font-family: Roboto Mono;
 }
 h4,
 .h4 {
@@ -3902,7 +3906,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .nav > li > a:hover {
-border-bottom:2px solid #072589 !important;
+border-bottom:2px solid #2f5fdb !important;
 }
 
 .nav > li > a:active {
@@ -3910,11 +3914,11 @@ border-bottom:2px solid #072589 !important;
 }
 
 .nav > li.disabled > a {
-  color: #777;
+  color: black;
 }
 .nav > li.disabled > a:hover,
 .nav > li.disabled > a:focus {
-  color: #777;
+  color: black;
   text-decoration: none;
   cursor: not-allowed;
   background-color: transparent;
@@ -3923,7 +3927,7 @@ border-bottom:2px solid #072589 !important;
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eee;
-  border-color: #337ab7;
+  border-color: #2f5fdb;
 }
 .nav .nav-divider {
   height: 1px;
@@ -3953,7 +3957,7 @@ border-bottom:2px solid #072589 !important;
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555;
+  color: black;
   cursor: default;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -4016,17 +4020,17 @@ border-bottom:2px solid #072589 !important;
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #2f5fdb;
 }
 
 .nav a:link{
 text-decoration: none !important;
-	color: #0b3a4d;
+	color: black;
 }
 
 .nav a:hover{
 text-decoration: none !important;
-	color: #072589;
+	color: black;
 }
 
 .nav a:active{
@@ -4036,12 +4040,12 @@ text-decoration: none !important;
 
 .nav-stacked a:link{
 text-decoration: none !important;
-	color: #0b3a4d;
+	color: #2f5fdb;
 }
 
 .nav-stacked a:hover{
 text-decoration: none !important;
-	color: #072589;
+	color: #2f5fdb;
 }
 
 .nav-stacked a:active{
@@ -6891,7 +6895,7 @@ img-responsive:hover .overlay4{
 }
 
 .overlay4 {  
-    background:rgba(7, 37, 137, .75);
+    background:rgba(47, 95, 219, .85);
     opacity: 0;    
     width:100%;height:100%; 
     -webkit-transition: all 0.3s ease-in-out;
@@ -6928,8 +6932,7 @@ img-responsive:hover .overlay4{
 	color: white;
 	text-align: center;
 	line-height: 1em;
-    font-weight: light; 
-    letter-spacing: .5em;
+    letter-spacing: .15em;
 }
 
 .caption2 {
@@ -7066,9 +7069,17 @@ text-transform: uppercase;
 }
 
 .textuppernav {
-text-transform: uppercase;
+    font-family: Roboto Mono;
 	letter-spacing: 0.2em
+    font-weight: 800;
+    font-size: 14px; 
 }
+
+a.current:link {
+   color: black;
+ text-decoration: underline;
+}
+
 
 .textuppersmall {
 text-transform: uppercase;
@@ -7276,7 +7287,7 @@ text-decoration: none;
 
 .btn a:hover {
 text-decoration: none;
-    color: #072589;
+    color: #2f5fdb;
 }
 
 .btn a:active {
@@ -7305,11 +7316,11 @@ text-decoration: none;
 }
 
 .plink a:hover {
-color: rgba(11, 58, 77, .75);
+color: rgba(47, 95, 219, .75);
 }
 
 .plink a:active {
-color: rgba(11, 58, 77, .75);
+color: rgba(47, 95, 219, .75);
 }
 
 .plink a:visited {
@@ -7328,16 +7339,16 @@ margin-top: 30px;
 }
 
 .faicon a:visited {
-color: darkgray;
+color: black;
 }
 
 .faicon a:link {
 text-decoration: none;
-     color: darkgray;
+     color: black;
 }
 
 .faicon a:hover {
-color: rgba(7, 37, 137, .75);
+color: rgba(47, 95, 219, .75);
 }
 
 .faicon a:active {
@@ -7345,7 +7356,7 @@ color: #EF4036;
 }
 
 .faicon a:visited {
-color: darkgray;
+color: black;
 }
 
 .pad {
@@ -7353,7 +7364,11 @@ margin-bottom: 200px;
 }
 
 .padtop {
-    margin-top: 6em; 
+    margin-top: 3em; 
+}
+
+.padbottom {
+    margin-bottom: 3em; 
 }
 
 .arrownav {
@@ -7426,4 +7441,18 @@ margin-bottom: 200px;
 
 .websitelink {
   text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.vidpad {
+   padding-top: 50px;
+    padding-bottom: 50px;
 }
