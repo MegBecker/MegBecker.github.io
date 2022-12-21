@@ -9,12 +9,11 @@ html {
   font-family: "Lato", sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-
+}
       @font-face {
-        font-family: "Fragment";
-        src: url("https://megbecker.com/css/fonts/PPFragment-GlareRegular.woff") format("woff"),
-        url("https://megbecker.com/css/fonts/PPFragment-GlareRegular.otf") format("opentype"),
-        }
+        font-family: 'PPFragment-GlareRegular';
+        src: url('http://megbecker.com/fonts/PPFragment-GlareRegular.woff') format('truetype');
+     }
      
 }
 body {
@@ -1277,8 +1276,9 @@ h6 .small,
 h1,
 .h1 {
   font-size: 28px;
-   font-weight: 100;
-    font-family: Lora;
+   font-family: 'PPFragment-GlareRegular';
+   font-weight:normal;
+   font-style:normal;
 }
 h2,
 .h2 {
