@@ -9,6 +9,13 @@ html {
   font-family: "Lato", sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+
+      @font-face {
+        font-family: "Fragment";
+        src: url("https://megbecker.com/css/fonts/Fragment.woff") format("woff"),
+        url("https://megbecker.com/css/fonts/Fragment.otf") format("opentype"),
+        }
+     
 }
 body {
   margin: 0;
