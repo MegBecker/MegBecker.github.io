@@ -1311,7 +1311,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-family: 'PPFragment-GlareRegular';
   font-weight:normal;
   font-style:normal;
@@ -1331,14 +1331,14 @@ h5,
 }
 h6,
 .h6 {
-  font-family: 'PPMori-Regular';
-  font-size: 16px;
+  font-family: 'PPMori-Book';
+  font-size: 15px;
     font-weight: 300;
 	line-height: 1.5em;
 }
 p {
   margin: 0 0 10px;
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'PPMori-Book';
 }
 .lead {
