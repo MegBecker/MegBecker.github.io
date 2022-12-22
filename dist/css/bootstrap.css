@@ -5731,6 +5731,9 @@ a.list-group-item-danger.active:focus {
 .embed-responsive-4by3 {
   padding-bottom: 75%;
 }
+.embed-responsive-1by1 {
+  padding-bottom: 75%;
+}
 .well {
   min-height: 20px;
   padding: 19px;
@@ -7145,6 +7148,12 @@ text-align: center;
 .artdesc {
 margin-top: 1em;
 }
+
+.artdescvid {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  text-align: center;
+  }
 
 
 .pgtitle {
