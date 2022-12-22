@@ -13,7 +13,29 @@ html {
       @font-face {
         font-family: 'PPFragment-GlareRegular';
         src: url('http://megbecker.com/fonts/PPFragment-GlareRegular.woff') format('truetype');
+      }
+        @font-face {
+          font-family: 'PPMori-SemiBold';
+          src: url('http://megbecker.com/fonts/PPMori-SemiBold.woff') format('truetype');
+        }
+          @font-face {
+            font-family: 'PPMori-ExtraBold';
+            src: url('http://megbecker.com/fonts/PPMori-ExtraBold.woff') format('truetype');
      }
+
+     @font-face {
+      font-family: 'PPMori-Book';
+      src: url('http://megbecker.com/fonts/PPMori-Book.woff') format('truetype');
+    }
+      @font-face {
+        font-family: 'PPMori-BookItalic';
+        src: url('http://megbecker.com/fonts/PPMori-BookItalic.woff') format('truetype');
+ }
+
+ @font-face {
+  font-family: 'PPMori-Regular';
+  src: url('http://megbecker.com/fonts/PPMori-Regular.woff') format('truetype');
+}
      
 }
 body {
@@ -1282,16 +1304,17 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 24px;
-	font-weight: 500;
-    font-family: Roboto Mono;
+  font-size: 25px;
+  font-family: 'PPMori-SemiBold';
+  font-weight:normal;
+  font-style:normal;
 }
 h3,
 .h3 {
-  font-weight: 500;
-  font-size: 25px;
-	font-weight: 800;
-        font-family: Roboto Mono;
+  font-size: 20px;
+  font-family: 'PPFragment-GlareRegular';
+  font-weight:normal;
+  font-style:normal;
 }
 h4,
 .h4 {
@@ -1304,15 +1327,19 @@ h5,
   font-size: 18px;
 	font-weight: 900;
 	line-height: 1.5em;
+  font-family: 'PPMori-Regular';
 }
 h6,
 .h6 {
+  font-family: 'PPMori-Regular';
   font-size: 16px;
     font-weight: 300;
 	line-height: 1.5em;
 }
 p {
   margin: 0 0 10px;
+  font-size: 13px;
+  font-family: 'PPMori-Book';
 }
 .lead {
   margin-bottom: 20px;
@@ -6944,40 +6971,17 @@ img-responsive:hover .overlay4{
 	position:relative;
 	color: white;
 	text-align: center;
-	line-height: 1em;
-    letter-spacing: .15em;
+  letter-spacing: .1em;
 }
 
 .caption2 {
-    top: 90px;
-	position:relative;
-	color: white;
-	text-align: center;
-	line-height: 1em;
-     font-weight: light;
-    letter-spacing: .5em;
+  top: 140px;
+position:relative;
+color: white;
+text-align: center;
+letter-spacing: .1em;
 }
 
-.caption3 {
-    top: 140px;
-	position:relative;
-	color: white;
-	text-align: center;
-	line-height: 1em;
-    font-weight: light;
-    letter-spacing: .5em;
-}
-
-
-.captiontest {
-    top: 150px;
-    position:relative;
-	color: white;
-	text-align: center;
-	line-height: 1em;
-     font-weight: light;
-    letter-spacing: .5em;
-}
 
 .workimage {
 width: 600px;
@@ -7082,10 +7086,8 @@ text-transform: uppercase;
 }
 
 .textuppernav {
-    font-family: Roboto Mono;
-	letter-spacing: 0.2em
-    font-weight: 800;
-    font-size: 14px;
+  font-size: 14px;
+  font-family: 'PPMori-Regular';
 }
 
 a.current:link {
@@ -7327,6 +7329,7 @@ margin-top: 50px;
 .aboutbtn {
 margin-top: 30px;
     padding-bottom: 5px;
+    font-family: 'PPMori-SemiBold';
 }
 
 .plink a:link {
