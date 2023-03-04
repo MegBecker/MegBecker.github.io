@@ -1298,21 +1298,21 @@ h6 .small,
 h1,
 .h1 {
   font-size: 28px;
-   font-family: 'PPFragment-GlareRegular';
+   font-family: 'PPFragment-GlareRegular', Arial, Helvetica, sans-serif;
    font-weight:normal;
    font-style:normal;
 }
 h2,
 .h2 {
   font-size: 25px;
-  font-family: 'PPMori-SemiBold';
+  font-family: 'PPMori-SemiBold', Arial, Helvetica, sans-serif;
   font-weight:normal;
   font-style:normal;
 }
 h3,
 .h3 {
   font-size: 24px;
-  font-family: 'PPFragment-GlareRegular';
+  font-family: 'PPFragment-GlareRegular', Arial, Helvetica, sans-serif;
   font-weight:normal;
   font-style:normal;
 }
@@ -1321,18 +1321,18 @@ h4,
   font-size: 18px;
 	font-weight: 300;
 	line-height: 1.5em;
-  font-family: 'PPMori-Regular';
+  font-family: 'PPMori-Regular', Arial, Helvetica, sans-serif;
 }
 h5,
 .h5 {
   font-size: 18px;
 	font-weight: 900;
 	line-height: 1.5em;
-  font-family: 'PPMori-Regular';
+  font-family: 'PPMori-Regular', Arial, Helvetica, sans-serif;
 }
 h6,
 .h6 {
-  font-family: 'PPMori-Book';
+  font-family: 'PPMori-Book', Arial, Helvetica, sans-serif;
   font-size: 15px;
     font-weight: 300;
 	line-height: 1.5em;
@@ -1340,7 +1340,7 @@ h6,
 p {
   margin: 0 0 10px;
   font-size: 14px;
-  font-family: 'PPMori-Book';
+  font-family: 'PPMori-Book', Arial, Helvetica, sans-serif;
 }
 .lead {
   margin-bottom: 20px;
