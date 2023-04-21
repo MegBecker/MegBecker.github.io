@@ -7397,6 +7397,14 @@ margin-bottom: 200px;
     margin-bottom: 3em;
 }
 
+.padbottombrand {
+  margin-bottom: 600px;
+}
+
+.padbottomabout {
+  margin-bottom: 250px;
+}
+
 .arrownav {
     word-spacing: 1em;
 }
