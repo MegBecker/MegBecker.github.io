@@ -5765,6 +5765,7 @@ a.list-group-item-danger.active:focus {
 .embed-responsive-1by1-mobile {
   padding-bottom: 100%;
 }
+
 .well {
   min-height: 20px;
   padding: 19px;
@@ -7391,6 +7392,11 @@ margin-bottom: 200px;
 
 .padtop {
     margin-top: 3em;
+}
+
+
+.padtopslight {
+    margin-top: 1em;
 }
 
 .padbottom {
