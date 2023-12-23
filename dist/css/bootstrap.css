@@ -3945,7 +3945,7 @@ border-bottom:2px solid #2f5fdb !important;
 }
 
 .nav > li > a:active {
-    border-bottom:2px solid #ef4036 !important;
+    border-bottom:2px solid #CC9CF2 !important;
 }
 
 .nav > li.disabled > a {
@@ -4494,7 +4494,7 @@ text-decoration: none !important;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #2f5fdb;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
