@@ -12,29 +12,29 @@ html {
 }
       @font-face {
         font-family: 'PPFragment-GlareRegular';
-        src: url('http://megbecker.com/fonts/PPFragment-GlareRegular.woff') format('truetype');
+        src: url('http://megbecker.com/fonts/PPFragment-GlareRegular.otf') format('truetype');
       }
         @font-face {
           font-family: 'PPMori-SemiBold';
-          src: url('http://megbecker.com/fonts/PPMori-SemiBold.woff') format('truetype');
+          src: url('http://megbecker.com/fonts/PPMori-SemiBold.otf') format('truetype');
         }
           @font-face {
             font-family: 'PPMori-ExtraBold';
-            src: url('http://megbecker.com/fonts/PPMori-ExtraBold.woff') format('truetype');
+            src: url('http://megbecker.com/fonts/PPMori-ExtraBold.otf') format('truetype');
      }
 
      @font-face {
       font-family: 'PPMori-Book';
-      src: url('http://megbecker.com/fonts/PPMori-Book.woff') format('truetype');
+      src: url('http://megbecker.com/fonts/PPMori-Book.otf') format('truetype');
     }
       @font-face {
         font-family: 'PPMori-BookItalic';
-        src: url('http://megbecker.com/fonts/PPMori-BookItalic.woff') format('truetype');
+        src: url('http://megbecker.com/fonts/PPMori-BookItalic.otf') format('truetype');
  }
 
  @font-face {
   font-family: 'PPMori-Regular';
-  src: url('http://megbecker.com/fonts/PPMori-Regular.woff') format('truetype');
+  src: url('http://megbecker.com/fonts/PPMori-Regular.otf') format('truetype');
 }
      
 }
