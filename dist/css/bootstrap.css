@@ -7032,7 +7032,9 @@ margin-left: auto;
   background-color: white;
     z-index: 150;
     padding-top: 1em;
-}
+text-align: center; 
+    
+} 
 
 .footer2 {
     position: absolute;
